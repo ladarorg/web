@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — LADAR</title>
+  <meta name="description" content="Get in touch with the LADAR team — for research collaboration, press enquiries, or general questions." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-primary">LADAR</span>
+      <span class="nav-logo-sub">Low Atmospheric Data Acquisition &amp; Research</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="atlas.html">ATLAS</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="updates.html">Updates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-content">
+      <p class="section-tag">Contact</p>
+      <h1 class="section-title">Get in touch.</h1>
+      <p class="section-intro">For research collaboration, press enquiries, or general questions about LADAR and Project ATLAS.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── Contact section ── -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2-1" style="gap: 5rem;">
+
+        <!-- Form -->
+        <div>
+          <p class="section-tag" style="margin-bottom: 1.5rem;">Send a message</p>
+
+          <form id="contact-form" novalidate>
+            <div class="grid-2" style="gap: 1rem; margin-bottom: 0;">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="type">Enquiry type</label>
+              <select class="form-select" id="type" name="type">
+                <option value="">Select a category</option>
+                <option value="collaboration">Research collaboration</option>
+                <option value="press">Press / media</option>
+                <option value="funding">Funding / partnership</option>
+                <option value="data">Data questions</option>
+                <option value="technical">Technical enquiry</option>
+                <option value="other">General / other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="organisation">Organisation (optional)</label>
+              <input class="form-input" type="text" id="organisation" name="organisation" placeholder="University, institution, or company" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell us about your enquiry..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send message</button>
+          </form>
+
+          <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 1rem; font-family: var(--font-mono);">
+            Note: This form is a placeholder and does not yet send messages. Please use the email address below directly.
+          </p>
+        </div>
+
+        <!-- Info panel -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; padding-top: 3.5rem;">
+
+          <div class="card">
+            <p class="card-title" style="margin-bottom: 0.8rem;">Email</p>
+            <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent);">contact@ladar.org</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.4rem;">We aim to respond within 3–5 working days.</p>
+          </div>
+
+          <div class="card">
+            <p class="card-title" style="margin-bottom: 1rem;">We are interested in</p>
+            <ul style="display: flex; flex-direction: column; gap: 0.6rem;">
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">→</span>Research collaboration with academics and institutions
+              </li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">→</span>Sensor development partnerships
+              </li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">→</span>Funding and grant opportunities
+              </li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">→</span>Field campaign site hosts (public or private land)
+              </li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--accent);">→</span>Press and science communication
+              </li>
+            </ul>
+          </div>
+
+          <div class="card" style="border-color: var(--border-bright);">
+            <p style="font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.8rem;">Project status</p>
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+              <span class="status-dot"></span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--amber);">Platform in development</span>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Stack 1 hardware is being developed. No field data has yet been collected. All sections of the site will be updated as the project progresses.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">LADAR</div>
+          <div class="footer-brand-full">Low Atmospheric Data Acquisition and Research</div>
+          <p class="footer-tagline">Open-access atmospheric research using drone-based sensing platforms. All data freely available.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About LADAR</a></li>
+            <li><a href="atlas.html">Project ATLAS</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="data.html">Data Portal</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Legal</p>
+          <ul class="footer-links">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Data Licence</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 LADAR. Non-profit organisation. All research outputs open access.</p>
+        <div class="footer-status">
+          <span class="status-dot"></span>
+          Platform in development — Stack 1 pending
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

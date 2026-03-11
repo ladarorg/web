@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATLAS — LADAR</title>
+  <meta name="description" content="Project ATLAS is LADAR's modular drone-based sensing platform for high-resolution lower atmosphere characterisation." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-primary">LADAR</span>
+      <span class="nav-logo-sub">Low Atmospheric Data Acquisition &amp; Research</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="atlas.html">ATLAS</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="updates.html">Updates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-content">
+      <p class="section-tag">The platform</p>
+      <h1 class="section-title">Project ATLAS</h1>
+      <p class="section-intro">A modular, drone-based sensing platform for high-resolution, three-dimensional characterisation of the lower atmosphere. Designed to expand progressively alongside research ambitions.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── Overview ── -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2-1">
+        <div>
+          <p class="section-tag">Overview</p>
+          <h2 class="section-title">Built for the atmosphere.</h2>
+          <p style="color: var(--text); font-size: 1rem; line-height: 1.9; margin-bottom: 1.4rem;">
+            ATLAS combines physics-informed modelling with machine learning to reconstruct three-dimensional environmental fields from sparse measurements. This allows investigations of temperature gradients, airflow dynamics, pollutant dispersion, and transient atmospheric phenomena that would be impractical with traditional fixed or point-based instruments.
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.97rem; line-height: 1.9; margin-bottom: 1.4rem;">
+            The platform is designed around a modular sensor architecture — instrumentation is selected and combined according to research objectives, payload constraints, and environmental conditions. Capability is added incrementally, only after the preceding configuration has been fully validated.
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.97rem; line-height: 1.9;">
+            This staged approach ensures technical robustness, manageable payload constraints, and flexibility across multiple research directions.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="card" style="border-color: var(--border-bright);">
+            <p style="font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem;">Key capabilities</p>
+            <ul style="display: flex; flex-direction: column; gap: 0.6rem;">
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>3D thermal mapping &amp; vertical profiling</li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>Atmospheric stability &amp; stratification analysis</li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>Flow field estimation from IMU &amp; anemometry</li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>ML-based volumetric field reconstruction</li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>Pollutant dispersion &amp; source localisation</li>
+              <li style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span>Transient &amp; extreme event capture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Sensor architecture ── -->
+  <section class="section" style="background: var(--bg-2);">
+    <div class="container">
+      <p class="section-tag">Sensor architecture</p>
+      <h2 class="section-title" style="margin-bottom: 0.8rem;">Modular instrumentation.</h2>
+      <p class="section-intro" style="margin-bottom: 3rem;">ATLAS integrates a range of environmental, atmospheric, and imaging sensors to enable multi-domain characterisation of the lower atmosphere.</p>
+
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden;">
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Sensor</th>
+              <th>Type / Instrument</th>
+              <th>Measures</th>
+              <th>Research applications</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Temperature</td>
+              <td>High-res digital thermistor</td>
+              <td>Air temperature</td>
+              <td>Vertical thermal profiles, urban heat island mapping, stability analysis</td>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td>Relative humidity sensor</td>
+              <td>RH, dew point</td>
+              <td>Fog formation studies, microclimate mapping, moisture flux</td>
+            </tr>
+            <tr>
+              <td>Barometer</td>
+              <td>Pressure sensor</td>
+              <td>Air pressure, altitude</td>
+              <td>Precise altitude estimation, pressure gradient detection, pre-event weather signatures</td>
+            </tr>
+            <tr>
+              <td>IMU</td>
+              <td>Inertial measurement unit</td>
+              <td>Acceleration, angular velocity, orientation</td>
+              <td>Turbulence intensity estimation, gust detection, wind disturbance inference</td>
+            </tr>
+            <tr>
+              <td>GPS</td>
+              <td>GNSS receiver</td>
+              <td>Position, velocity over ground</td>
+              <td>Geospatial mapping, field reconstruction, wind estimation via ground/air speed differential</td>
+            </tr>
+            <tr>
+              <td>PM2.5 / PM10</td>
+              <td>Optical particle counter</td>
+              <td>Fine particulate concentration</td>
+              <td>Pollution plume mapping, dispersion visualisation, exposure mapping</td>
+            </tr>
+            <tr>
+              <td>Gas sensors</td>
+              <td>Electrochemical / NDIR</td>
+              <td>CO₂, NO₂, O₃</td>
+              <td>Urban emission analysis, transport modelling, source localisation</td>
+            </tr>
+            <tr>
+              <td>Anemometer</td>
+              <td>Ultrasonic anemometer</td>
+              <td>3D wind velocity</td>
+              <td>Turbulence spectra, wind shear detection, flow visualisation, vorticity estimation</td>
+            </tr>
+            <tr>
+              <td>Pressure probe</td>
+              <td>Multi-hole probe (pitot system)</td>
+              <td>Airspeed, flow direction</td>
+              <td>Direct flow angle measurement, complementary to anemometry</td>
+            </tr>
+            <tr>
+              <td>Thermal camera</td>
+              <td>IR imaging sensor</td>
+              <td>Surface temperature</td>
+              <td>Heat leakage mapping, urban heat visualisation, thermal plume detection above structures</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Sensor stacks ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-tag">Sensor stacks</p>
+      <h2 class="section-title" style="margin-bottom: 0.8rem;">Progressive capability.</h2>
+      <p class="section-intro" style="margin-bottom: 3rem;">ATLAS employs a staged architecture. Each stack builds on the last, and is only deployed following successful validation of all preceding configurations.</p>
+
+      <div class="grid-2" style="gap: 1.5rem;">
+
+        <div class="stack-card fade-in">
+          <div class="stack-card-header">
+            <span class="stack-number">Stack 1</span>
+            <span class="stack-card-title">Core Atmospheric Profiling</span>
+            <span style="margin-left: auto; font-family: var(--font-mono); font-size: 0.62rem; color: var(--accent); background: var(--accent-dim); padding: 0.15rem 0.5rem; border-radius: 2px;">Current</span>
+          </div>
+          <div class="stack-card-body">
+            <div class="stack-sensors">
+              <span class="sensor-tag">Temperature</span>
+              <span class="sensor-tag">Humidity</span>
+              <span class="sensor-tag">Barometer</span>
+              <span class="sensor-tag">IMU</span>
+              <span class="sensor-tag">GPS</span>
+            </div>
+            <ul class="stack-research-list">
+              <li>Vertical temperature gradient analysis</li>
+              <li>Atmospheric stability assessment</li>
+              <li>Urban heat island mapping</li>
+              <li>Basic turbulence inference from IMU disturbances</li>
+              <li>3D thermal field reconstruction via interpolation</li>
+            </ul>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 1rem;">Lightweight · low power · high reliability · ML reconstruction baseline</p>
+          </div>
+        </div>
+
+        <div class="stack-card fade-in">
+          <div class="stack-card-header">
+            <span class="stack-number">Stack 2</span>
+            <span class="stack-card-title">Environmental Dispersion &amp; Air Quality</span>
+          </div>
+          <div class="stack-card-body">
+            <div class="stack-sensors">
+              <span class="sensor-tag">Stack 1</span>
+              <span class="sensor-tag">PM2.5 / PM10</span>
+              <span class="sensor-tag">CO₂ / NO₂ / O₃ (opt.)</span>
+            </div>
+            <ul class="stack-research-list">
+              <li>Pollution plume mapping</li>
+              <li>Advection–diffusion modelling</li>
+              <li>Source localisation attempts</li>
+              <li>Time-dependent dispersion reconstruction</li>
+              <li>ML-based spatial interpolation of sparse pollutant samples</li>
+            </ul>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 1rem;">Trade-off: increased calibration complexity, slower sensor response times</p>
+          </div>
+        </div>
+
+        <div class="stack-card fade-in">
+          <div class="stack-card-header">
+            <span class="stack-number">Stack 3</span>
+            <span class="stack-card-title">Flow Field Characterisation</span>
+          </div>
+          <div class="stack-card-body">
+            <div class="stack-sensors">
+              <span class="sensor-tag">Stack 1</span>
+              <span class="sensor-tag">Ultrasonic Anemometer</span>
+              <span class="sensor-tag">OR Multi-Hole Probe</span>
+            </div>
+            <ul class="stack-research-list">
+              <li>3D wind vector mapping</li>
+              <li>Turbulence intensity estimation</li>
+              <li>Wind shear detection</li>
+              <li>Vorticity approximation</li>
+              <li>Validation of CFD or simplified flow models</li>
+            </ul>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 1rem;">Trade-off: higher cost, increased payload, sensitive mounting requirements</p>
+          </div>
+        </div>
+
+        <div class="stack-card fade-in">
+          <div class="stack-card-header">
+            <span class="stack-number">Stack 4</span>
+            <span class="stack-card-title">Thermal Imaging &amp; Surface Interaction</span>
+          </div>
+          <div class="stack-card-body">
+            <div class="stack-sensors">
+              <span class="sensor-tag">Stack 1</span>
+              <span class="sensor-tag">Thermal Camera</span>
+            </div>
+            <ul class="stack-research-list">
+              <li>Surface heat flux estimation</li>
+              <li>Urban heat trapping visualisation</li>
+              <li>Thermal plume detection above structures</li>
+              <li>Building-envelope heat leakage mapping</li>
+            </ul>
+            <p style="font-size: 0.8rem; color: var(--text-faint); margin-top: 1rem;">Enables surface–atmosphere interaction studies at urban scale</p>
+          </div>
+        </div>
+
+        <div class="stack-card fade-in" style="grid-column: 1 / -1;">
+          <div class="stack-card-header">
+            <span class="stack-number">Stack 5</span>
+            <span class="stack-card-title">Adaptive Intelligence Platform</span>
+            <span style="margin-left: auto; font-family: var(--font-mono); font-size: 0.62rem; color: var(--text-faint); background: var(--bg-3); padding: 0.15rem 0.5rem; border-radius: 2px;">Future</span>
+          </div>
+          <div class="stack-card-body">
+            <div class="stack-sensors">
+              <span class="sensor-tag">Any Stack 1–4</span>
+              <span class="sensor-tag">Onboard Edge Computing</span>
+            </div>
+            <div class="grid-2" style="margin-top: 0.5rem;">
+              <ul class="stack-research-list">
+                <li>Real-time gradient detection</li>
+                <li>Adaptive waypoint adjustment</li>
+              </ul>
+              <ul class="stack-research-list">
+                <li>Uncertainty-driven sampling</li>
+                <li>ML-informed path optimisation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Operational constraints ── -->
+  <section class="section" style="background: var(--bg-2);">
+    <div class="container">
+      <p class="section-tag">Operational constraints</p>
+      <h2 class="section-title" style="margin-bottom: 0.8rem;">Physical realities.</h2>
+      <p class="section-intro" style="margin-bottom: 3rem;">ATLAS operates within the physical limits of a small unmanned aerial platform. Sensor selection and stack configuration are governed by the following constraints.</p>
+
+      <div class="grid-3">
+        <div class="constraint-item fade-in">
+          <p class="constraint-label">Payload mass</p>
+          <p class="constraint-text">Each additional sensor increases total weight, affecting thrust requirements, motor loading, and flight endurance. Payload must remain within safe takeoff limits.</p>
+        </div>
+        <div class="constraint-item fade-in">
+          <p class="constraint-label">Power consumption</p>
+          <p class="constraint-text">Active sensors and onboard processing draw from the flight battery. Increased electrical load reduces flight time and may introduce thermal management challenges.</p>
+        </div>
+        <div class="constraint-item fade-in">
+          <p class="constraint-label">Flight endurance</p>
+          <p class="constraint-text">Battery capacity limits total mission duration. Heavier configurations reduce achievable altitude range, profiling depth, and spatial coverage.</p>
+        </div>
+        <div class="constraint-item fade-in">
+          <p class="constraint-label">Aerodynamic disturbance</p>
+          <p class="constraint-text">External probes alter airflow around the drone body. Sensor placement must minimise rotor wash interference and structural vibration.</p>
+        </div>
+        <div class="constraint-item fade-in">
+          <p class="constraint-label">Sensor response time</p>
+          <p class="constraint-text">Gas and particulate sensors have slower response times. Rapid flight through gradients can introduce spatial lag in measurements.</p>
+        </div>
+        <div class="constraint-item fade-in">
+          <p class="constraint-label">Data bandwidth</p>
+          <p class="constraint-text">High-frequency sensors and imaging systems generate significant data volumes. Logging speed, storage, and synchronisation accuracy constrain acquisition strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">LADAR</div>
+          <div class="footer-brand-full">Low Atmospheric Data Acquisition and Research</div>
+          <p class="footer-tagline">Open-access atmospheric research using drone-based sensing platforms. All data freely available.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About LADAR</a></li>
+            <li><a href="atlas.html">Project ATLAS</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="data.html">Data Portal</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Legal</p>
+          <ul class="footer-links">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Data Licence</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 LADAR. Non-profit organisation. All research outputs open access.</p>
+        <div class="footer-status">
+          <span class="status-dot"></span>
+          Platform in development — Stack 1 pending
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

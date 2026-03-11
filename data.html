@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Portal — LADAR</title>
+  <meta name="description" content="Open-access atmospheric datasets collected by LADAR's drone-based sensing platforms." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-primary">LADAR</span>
+      <span class="nav-logo-sub">Low Atmospheric Data Acquisition &amp; Research</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="atlas.html">ATLAS</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="updates.html">Updates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── Page Hero ── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-content">
+      <p class="section-tag">Data portal</p>
+      <h1 class="section-title">Open atmospheric datasets.</h1>
+      <p class="section-intro">All field data collected by LADAR is freely available — no registration, no embargo, no fees. Science belongs to everyone.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ── Coming soon ── -->
+  <section class="section">
+    <div class="container">
+
+      <div class="notice">
+        <span class="notice-icon">◎</span>
+        <div>
+          <strong>No data yet.</strong> LADAR has not yet commenced field operations. This portal will be populated as data collection begins, beginning with Stack 1 atmospheric profiling datasets.
+        </div>
+      </div>
+
+      <div class="coming-soon">
+        <div class="coming-soon-icon">◧</div>
+        <h3>Data portal launching with Stack 1</h3>
+        <p>Temperature, humidity, pressure, IMU, and GPS datasets from vertical profiling campaigns will be the first outputs available here.</p>
+        <a href="updates.html" class="btn btn-outline btn-sm">Follow progress</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── What to expect ── -->
+  <section class="section" style="background: var(--bg-2);">
+    <div class="container">
+      <p class="section-tag">What to expect</p>
+      <h2 class="section-title" style="margin-bottom: 0.8rem;">How the data portal will work.</h2>
+      <p class="section-intro" style="margin-bottom: 3rem;">When operational, this portal will provide direct access to raw sensor logs, processed atmospheric fields, and reconstructed volumetric datasets.</p>
+
+      <div class="grid-3">
+        <div class="card fade-in">
+          <div class="card-icon">⬇</div>
+          <h3 class="card-title">Direct download</h3>
+          <p class="card-body">Datasets available as CSV, netCDF, and JSON formats. No account required. All files include complete metadata, calibration records, and flight logs.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">◈</div>
+          <h3 class="card-title">Campaign browser</h3>
+          <p class="card-body">Browse data by campaign date, location, stack configuration, and sensor type. Each campaign page includes flight path visualisations and summary statistics.</p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">⬡</div>
+          <h3 class="card-title">Reconstructed fields</h3>
+          <p class="card-body">In addition to raw sensor logs, processed volumetric field reconstructions will be available with associated uncertainty estimates and reconstruction metadata.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Data types ── -->
+  <section class="section">
+    <div class="container">
+      <p class="section-tag">Data types</p>
+      <h2 class="section-title" style="margin-bottom: 3rem;">What will be collected.</h2>
+
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden;">
+        <table class="sensor-table">
+          <thead>
+            <tr>
+              <th>Dataset type</th>
+              <th>Variables</th>
+              <th>Format</th>
+              <th>Stack</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Thermal profile</td>
+              <td>Temperature (°C), altitude (m), timestamp</td>
+              <td>CSV / netCDF</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">S1</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--amber); background: var(--amber-dim); padding: 0.15rem 0.5rem; border-radius: 2px;">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Humidity profile</td>
+              <td>Relative humidity (%), dew point (°C), altitude (m)</td>
+              <td>CSV / netCDF</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">S1</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--amber); background: var(--amber-dim); padding: 0.15rem 0.5rem; border-radius: 2px;">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Pressure log</td>
+              <td>Air pressure (hPa), derived altitude (m)</td>
+              <td>CSV</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">S1</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--amber); background: var(--amber-dim); padding: 0.15rem 0.5rem; border-radius: 2px;">Pending</span></td>
+            </tr>
+            <tr>
+              <td>IMU log</td>
+              <td>Acceleration (x,y,z), angular velocity, orientation</td>
+              <td>CSV</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">S1</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--amber); background: var(--amber-dim); padding: 0.15rem 0.5rem; border-radius: 2px;">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Flight track</td>
+              <td>Latitude, longitude, altitude, ground speed</td>
+              <td>CSV / GeoJSON</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">S1</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--amber); background: var(--amber-dim); padding: 0.15rem 0.5rem; border-radius: 2px;">Pending</span></td>
+            </tr>
+            <tr>
+              <td>3D thermal field</td>
+              <td>Reconstructed temperature volume (x,y,z,T)</td>
+              <td>netCDF</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">S1</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--amber); background: var(--amber-dim); padding: 0.15rem 0.5rem; border-radius: 2px;">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Particulate log</td>
+              <td>PM2.5, PM10 concentration (µg/m³), geolocation</td>
+              <td>CSV / netCDF</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);">S2</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-faint); background: var(--bg-3); padding: 0.15rem 0.5rem; border-radius: 2px;">Planned</span></td>
+            </tr>
+            <tr>
+              <td>Gas log</td>
+              <td>CO₂ (ppm), NO₂, O₃ (ppb), geolocation</td>
+              <td>CSV / netCDF</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);">S2</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-faint); background: var(--bg-3); padding: 0.15rem 0.5rem; border-radius: 2px;">Planned</span></td>
+            </tr>
+            <tr>
+              <td>Wind field</td>
+              <td>3D wind vectors (u,v,w), turbulence intensity</td>
+              <td>netCDF</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);">S3</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-faint); background: var(--bg-3); padding: 0.15rem 0.5rem; border-radius: 2px;">Planned</span></td>
+            </tr>
+            <tr>
+              <td>Thermal imagery</td>
+              <td>Georeferenced IR imagery, surface temperature maps</td>
+              <td>GeoTIFF</td>
+              <td style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);">S4</td>
+              <td><span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-faint); background: var(--bg-3); padding: 0.15rem 0.5rem; border-radius: 2px;">Planned</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="font-size: 0.82rem; color: var(--text-faint); margin-top: 1rem; font-family: var(--font-mono);">S1–S4 refer to ATLAS sensor stack configurations. See the <a href="atlas.html" style="color: var(--text-muted); text-decoration: underline;">ATLAS page</a> for full details.</p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">LADAR</div>
+          <div class="footer-brand-full">Low Atmospheric Data Acquisition and Research</div>
+          <p class="footer-tagline">Open-access atmospheric research using drone-based sensing platforms. All data freely available.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About LADAR</a></li>
+            <li><a href="atlas.html">Project ATLAS</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="data.html">Data Portal</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Legal</p>
+          <ul class="footer-links">
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Data Licence</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 LADAR. Non-profit organisation. All research outputs open access.</p>
+        <div class="footer-status">
+          <span class="status-dot"></span>
+          Platform in development — Stack 1 pending
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
